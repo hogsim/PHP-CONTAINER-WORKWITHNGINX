@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 # phpize deps
 RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg-config re2c --no-install-recommends && rm -r /var/lib/apt/lists/*
 
-# Create Nginx User and Group
+# Create Nginx User and Group for Nginx Container
 
 RUN adduser --system --no-create-home --disabled-login --disabled-password --group nginx 
 
